@@ -38,6 +38,4 @@
             <a href="www.linkedin.com/in/lucianoespejo">
                 <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></img>
             </a>
-            <br>
-            <img  src="./img/tohru_cute.gif" width="10%" height="10%">
-        </div>
+</div>
