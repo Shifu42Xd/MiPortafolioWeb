@@ -8,10 +8,10 @@
 
 ## 🚀 Vista Previa
 
-[![Vista previa del portafolio](https://via.placeholder.com/800x400?text=Screenshot+del+Portafolio)](https://lucianoespejo.com)  
-*(Reemplazar con imagen real del portafolio)*
+![Vista previa del portafolio](https://github.com/Shifu42Xd/MiPortafolioWeb/blob/main/images/PortafolioWeb.png)  
 
-[Ver sitio en vivo](https://portafolielucianoespejo.vercel.app/)
+
+Puedes hechar un vistazo dando click [aqui](https://portafolielucianoespejo.vercel.app/)
 
 ## ✨ Características Principales
 
