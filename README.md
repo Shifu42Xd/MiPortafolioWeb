@@ -31,5 +31,13 @@
 5. **Contacto**: Formulario funcional para enviar mensajes
 
 # Contactos
-1. **Email**: ismaelluchi436@gmail.com
-2. **[LinkedIn](www.linkedin.com/in/lucianoespejo)**
+<div align="center">
+            <a href="mailto:lucianoespejo.shifu@gmail.com">
+                <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></img>
+            </a>
+            <a href="www.linkedin.com/in/lucianoespejo">
+                <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></img>
+            </a>
+            <br>
+            <img  src="./img/tohru_cute.gif" width="10%" height="10%">
+        </div>
