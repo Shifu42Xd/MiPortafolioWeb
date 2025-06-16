@@ -11,7 +11,7 @@
 [![Vista previa del portafolio](https://via.placeholder.com/800x400?text=Screenshot+del+Portafolio)](https://lucianoespejo.com)  
 *(Reemplazar con imagen real del portafolio)*
 
-[Ver sitio en vivo](https://portafolielucianoespejo.vercel.app/) *(Enlace de ejemplo)*
+[Ver sitio en vivo](https://portafolielucianoespejo.vercel.app/)
 
 ## ✨ Características Principales
 
@@ -22,12 +22,14 @@
 - **Formulario de contacto funcional** con validación y mensajes de error
 - **Elementos interactivos** como menú móvil y efectos visuales
 
-## 🛠️ Tecnologías Utilizadas
+## 🔍 Secciones Destacadas
 
-| Frontend          | Diseño              | Herramientas         |
-|-------------------|---------------------|----------------------|
-| HTML5             | CSS Variables       | Font Awesome         |
-| CSS3 (Flexbox/Grid)| Animaciones CSS     | Simple Icons         |
-| JavaScript        | Responsive Design   | Formspree (formularios) |
+1. **Inicio**: Presentación profesional con enfoque en ciencia de datos
+2. **Sobre Mí**: Historia personal y trayectoria académica
+3. **Habilidades**: Conocimientos técnicos y habilidades blandas
+4. **Prácticas Profesionales**: Proyectos destacados con tecnologías utilizadas
+5. **Contacto**: Formulario funcional para enviar mensajes
 
-## 📂 Estructura del Proyecto
+# Contactos
+1. **Email**: ismaelluchi436@gmail.com
+2. **[LinkedIn](www.linkedin.com/in/lucianoespejo)**
