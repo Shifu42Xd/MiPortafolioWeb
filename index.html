@@ -30,7 +30,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="javascript:void(0)" class="logo">
+      <a href="#home" class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
           <title>Logo</title>
           <g transform="translate(-8.000000, -2.000000)">
@@ -57,6 +57,9 @@
       </a>
 
       <nav class="nav-links">
+        <div class="nav-item">
+          <a href="#home" class="nav-link active"></a>
+        </div>
         <div class="nav-item">
           <a href="#about" class="nav-link"><span>01.</span>Sobre Mí</a>
         </div>
@@ -85,6 +88,9 @@
       </div>
 
       <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-nav-item">
+          <a href="#home" class="mobile-nav-link active"> </a>
+        </div>
         <div class="mobile-nav-item">
           <a href="#about" class="mobile-nav-link">
             <span>01.</span>
@@ -167,7 +173,7 @@
     <!-- Main -->
     <main class="main">
       <!-- Hero -->
-      <section class="hero container">
+      <section class="hero container" id="home">
         <p class="hero-greeting">Hola, mi nombre es</p>
         <h1 class="hero-title">Luciano Espejo.</h1>
         <h2 class="hero-subtitle">Data Scients.</h2>
@@ -219,10 +225,7 @@
           </div>
           <div class="about-pic">
             <div class="about-pic-wrapper">
-              <img
-                src="images/luciano_espejo.jpeg"
-                alt="Luciano Espejo"
-              />
+              <img src="images/luciano_espejo.jpeg" alt="Luciano Espejo" />
             </div>
           </div>
         </div>
@@ -342,10 +345,7 @@
 
             <div class="featured-project-image">
               <a href="javascript:void(0)">
-                <img
-                  src="images/bkpSW/Screenshot_3.png"
-                  alt="Backup Switchs"
-                />
+                <img src="images/bkpSW/Screenshot_3.png" alt="Backup Switchs" />
               </a>
             </div>
           </div>
@@ -708,6 +708,5 @@
     <script src="js/scroll_heder.js"></script>
 
     <script src="js/contact.js"></script>
-
   </body>
 </html>
