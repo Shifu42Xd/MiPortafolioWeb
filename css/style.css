@@ -443,55 +443,72 @@ section {
 }
 
 /* Hero */
+/* Hero - SOLUCIÓN DEFINITIVA PARA TODOS LOS DISPOSITIVOS */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  /* Compensa el header fijo */
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
 
 .hero {
   display: flex;
-  justify-content: center;
-  /* Centra verticalmente */
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  /* Centra horizontalmente */
   text-align: center;
-
-  min-height: 100vh;
   width: 100%;
-
-  padding-top: calc(100px + 5vh);
-
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-
+  padding: 0 20px;
   box-sizing: border-box;
-  position: relative;
+  margin: 0 auto;
 }
 
 .hero-greeting {
   color: var(--green);
   font-family: var(--font-mono);
-  font-size: clamp(14px, 5vw, 16px);
-  margin: 0 0 30px 4px;
+  font-size: clamp(14px, 4vw, 16px);
+  margin: 0 0 15px 4px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards 0.2s;
 }
 
 .hero-title {
   color: var(--lightest-slate);
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(36px, 10vw, 80px);
   line-height: 1.1;
-  margin: 0;
+  margin: 0 0 10px 0;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards 0.4s;
 }
 
 .hero-subtitle {
   color: var(--slate);
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(36px, 10vw, 70px);
   line-height: 1.1;
   margin: 0 0 30px 0;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards 0.6s;
 }
 
 .hero-description {
   max-width: 540px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  margin: 0 auto 30px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards 0.8s;
+}
+
+.hero-description p {
+  font-size: clamp(15px, 2.5vw, 18px);
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 .hero-cta {
@@ -499,18 +516,141 @@ section {
   background-color: transparent;
   border: 1px solid var(--green);
   border-radius: 4px;
-  padding: 1.25rem 1.75rem;
+  padding: 1rem 1.5rem;
   font-family: var(--font-mono);
   font-size: 14px;
-  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
-  margin-top: 50px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards 1s;
 }
 
 .hero-cta:hover {
   background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tabletas */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  .hero {
+    padding: 0 30px;
+  }
+
+  .hero-title {
+    font-size: clamp(32px, 8vw, 60px);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(32px, 8vw, 56px);
+  }
+
+  .hero-description {
+    max-width: 500px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    min-height: 90vh;
+  }
+
+  .hero {
+    padding: 0 20px;
+  }
+
+  .hero-greeting {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: clamp(28px, 12vw, 48px);
+    margin-bottom: 5px;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(28px, 12vw, 42px);
+    margin-bottom: 20px;
+  }
+
+  .hero-description {
+    margin-bottom: 25px;
+  }
+
+  .hero-description p {
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    min-height: 85vh;
+  }
+
+  .hero {
+    padding: 0 15px;
+  }
+
+  .hero-greeting {
+    font-size: 13px;
+  }
+
+  .hero-title {
+    font-size: clamp(24px, 14vw, 36px);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(24px, 14vw, 32px);
+  }
+
+  .hero-description p {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1600px) {
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .hero-description {
+    max-width: 600px;
+  }
+
+  .hero-description p {
+    font-size: 20px;
+  }
 }
 
 /* About */
