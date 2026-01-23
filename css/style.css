@@ -292,7 +292,7 @@ ul {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .nav-links {
     display: none;
   }
@@ -305,6 +305,12 @@ ul {
 
   .mobile-menu {
     display: flex;
+  }
+
+  .about-pic {
+    margin: 50px auto 80px !important;
+    width: 80%;
+    max-width: 300px;
   }
 }
 
@@ -388,6 +394,7 @@ ul {
 }
 
 @media (max-width: 768px) {
+
   .social,
   .email {
     display: none;
@@ -436,25 +443,26 @@ section {
 }
 
 /* Hero */
-/* REEMPLAZAR EN TU CSS: css/style.css */
 
 .hero {
   display: flex;
-  justify-content: center; /* Centra verticalmente en el espacio disponible */
+  justify-content: center;
+  /* Centra verticalmente */
   flex-direction: column;
-  align-items: center; /* Centra horizontalmente */
+  align-items: center;
+  /* Centra horizontalmente */
   text-align: center;
 
-  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  min-height: 100vh;
   width: 100%;
 
-  /* CORRECCIÓN: 130px asegura que baje más allá de tu barra de navegación (que mide 100px) */
-  padding-top: 130px;
-  padding-bottom: 50px; /* Un poco de aire abajo por si la pantalla es muy bajita */
+  padding-top: calc(100px + 5vh);
+
+  padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
 
-  box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -1665,6 +1673,7 @@ section {
 }
 
 @media (max-width: 768px) {
+
   /* 1. Aumentar tamaño de letra general (para que no se vean "chicas") */
   p,
   .about-text p,
